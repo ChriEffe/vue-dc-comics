@@ -6,28 +6,28 @@
             </div>
         </div>
         <div class="main-bottom">
-            <div class="container">
-                <div class="content">
+            <ul class="container">
+                <li class="content">
                     <img src="../assets/img/buy-comics-digital-comics.png" alt="">
                     <p class="caption">digital comics</p>
-                </div>
-                <div class="content">
+                </li>
+                <li class="content">
                     <img src="../assets/img/buy-comics-merchandise.png" alt="">
                     <p class="caption">dc merchandise</p>
-                </div>
-                <div class="content">
+                </li>
+                <li class="content">
                     <img src="../assets/img/buy-comics-subscriptions.png" alt="">
                     <p class="caption">subscriptions</p>
-                </div>
-                <div class="content">
+                </li>
+                <li class="content">
                     <img src="../assets/img/buy-comics-shop-locator.png" alt="">
                     <p class="caption">dc shop locator</p>
-                </div>
-                <div class="content">
+                </li>
+                <li class="content">
                     <img src="../assets/img/buy-dc-power-visa.svg" alt="">
                     <p class="caption">dc power visa</p>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </main>
 </template>
