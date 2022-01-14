@@ -63,7 +63,7 @@ export default {
         .main-bottom {
             width: 100%;
             height: 150px;
-            background-color: #0282f9;
+            background-color: $headingsColor;
             text-transform: uppercase;
         }
         .content {

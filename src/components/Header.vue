@@ -28,33 +28,34 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-header  {
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    ul  {
-        list-style: none;
+    @import "../assets/scss/style.scss";
+    header  {
+        height: 150px;
         display: flex;
-        color: black;
-        font-weight: bold;
-        text-transform: uppercase;
-        li  {
-            padding: 0 0.5em;
-            a  {
-                text-decoration: none;
-                color: black;
-                padding: 64px 0;
-                cursor: pointer;
-                &:hover,
-                &:active,
-                &.active  {
-                    color: #0282f9;
-                    border-bottom: 3px solid #0282f9;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        ul  {
+            list-style: none;
+            display: flex;
+            color: black;
+            font-weight: bold;
+            text-transform: uppercase;
+            li  {
+                padding: 0 0.5em;
+                a  {
+                    text-decoration: none;
+                    color: black;
+                    padding: 64px 0;
+                    cursor: pointer;
+                    &:hover,
+                    &:active,
+                    &.active  {
+                        color: #0282f9;
+                        border-bottom: 3px solid $headingsColor;
+                    }
                 }
-            }
-        } 
+            } 
+        }
     }
-}
 </style>
