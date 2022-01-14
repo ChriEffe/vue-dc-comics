@@ -7,6 +7,9 @@
                         <h1>current series</h1>
                     </div>
                     <Thumbs v-for="(thumb, index) in thumbs" :key="index" :img="thumb.thumb" :alt="thumb.series" :title="thumb.series" />
+                    <div class="container-bottom">
+                        <button class="load">load more</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,7 +148,7 @@ export default {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 15px;
-                padding: 3em 0;
+                padding: 3em 0 1.5em;
                 .title {
                     text-transform: uppercase;
                     font-size: 0.8em;
@@ -153,7 +156,21 @@ export default {
                     padding: 0.7em;
                     position: absolute;
                     top: -4.5%;
-
+                }
+                .container-bottom {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .load {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: white;
+                        background-color: $headingsColor;
+                        border: none;
+                        padding: 0.8em 4em;
+                        margin-top: 2em;
+                        cursor: pointer;
+                    }
                 }
             }
         }
