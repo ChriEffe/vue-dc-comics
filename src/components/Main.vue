@@ -3,7 +3,10 @@
         <div class="main-top">
             <div class="container">
                 <div class="thumbs-container">
-                <Thumbs v-for="(thumb, index) in thumbs" :key="index" :img="thumb.thumb" :alt="thumb.series" :title="thumb.series" />
+                    <div class="title">
+                        <h1>current series</h1>
+                    </div>
+                    <Thumbs v-for="(thumb, index) in thumbs" :key="index" :img="thumb.thumb" :alt="thumb.series" :title="thumb.series" />
                 </div>
             </div>
         </div>
@@ -138,10 +141,20 @@ export default {
             align-items: center;
             height: 100%;
             .thumbs-container {
+                position: relative;
                 display: flex;
                 flex-wrap: wrap;
                 gap: 15px;
                 padding: 3em 0;
+                .title {
+                    text-transform: uppercase;
+                    font-size: 0.8em;
+                    background-color: $headingsColor;
+                    padding: 0.7em;
+                    position: absolute;
+                    top: -4.5%;
+
+                }
             }
         }
         .main-bottom {

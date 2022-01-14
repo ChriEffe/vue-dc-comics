@@ -22,7 +22,6 @@ export default {
 <style lang="scss" scoped>
 .thumb-container {
     width: 180px;
-}
     .thumb {
         height: 180px;
         width: 180px;
@@ -37,4 +36,5 @@ export default {
         font-size: 0.8em;
         color: white;
     }
+}
 </style>
